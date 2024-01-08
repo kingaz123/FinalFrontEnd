@@ -45,7 +45,7 @@ const DashboardSidebar: React.FC = () => {
         <span>
           <i className="fa-solid fa-right-from-bracket"></i>
         </span>
-        <span className="hover:text-gray-100 transition-colors">Logout</span>
+        <span className="hover:text-gray-100 transition-colors">Log Out</span>
       </div>
     </div>
   );
