@@ -210,7 +210,7 @@ const CreateTaskPage = () => {
             </div>
             <div className="flex items-center gap-x-5">
               <div className="w-2/4">
-                <Label>Assigness</Label>
+                <Label>Assignees</Label>
                 <Select
                   mode="multiple"
                   placeholder="Select assignees"

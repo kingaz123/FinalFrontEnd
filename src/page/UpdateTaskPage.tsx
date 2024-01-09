@@ -144,7 +144,7 @@ const UpdateTaskPage = () => {
               <Input control={control} name="projectId" disabled></Input>
             </Field>
             <Field kind="full">
-              <Label>Task name</Label>
+              <Label>Task Name</Label>
               <Input control={control} name="taskName"></Input>
             </Field>
             <Field kind="full">
@@ -218,10 +218,10 @@ const UpdateTaskPage = () => {
             </div>
             <div className="flex items-center gap-x-5">
               <div className="w-2/4">
-                <Label>Assigness</Label>
+                <Label>Assignees</Label>
                 <Select
                   mode="multiple"
-                  placeholder="Inserted are removed"
+                  placeholder="Select assignees"
                   value={selectedItems}
                   onChange={setSelectedItems}
                   style={{
@@ -235,7 +235,7 @@ const UpdateTaskPage = () => {
                 />
               </div>
               <div className="w-2/4">
-                <Label>Time tracking</Label>
+                <Label>Time Tracking</Label>
                 <div className="relative progress">
                   <input
                     type="range"
@@ -250,16 +250,16 @@ const UpdateTaskPage = () => {
             </div>
             <div className="flex items-center gap-x-5 mt-10">
               <div className="w-2/4">
-                <Label>Oririnal Estimate</Label>
+                <Label>Oririnal Estimated Time</Label>
                 <Input control={control} name="originalEstimate"></Input>
               </div>
               <div className="w-2/4 flex items-center gap-x-3">
                 <div className="w-2/4">
-                  <Label>Oh longged Time spent</Label>
+                  <Label>Time Spent</Label>
                   <Input control={control} name="timeTrackingSpent"></Input>
                 </div>
                 <div className="w-2/4">
-                  <Label>Oh remaining Time remaining</Label>
+                  <Label>Time Remaining</Label>
                   <Input control={control} name="timeTrackingRemaining"></Input>
                 </div>
               </div>

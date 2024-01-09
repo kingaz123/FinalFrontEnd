@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form";
 import { Button } from "../components/button";
 import { useDispatch, useSelector } from "react-redux";
 import { authLogin } from "../redux/auth/auth-slice";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 
 const LoginPage: React.FC = () => {
   const dispatch = useDispatch();
@@ -73,6 +73,12 @@ const LoginPage: React.FC = () => {
               Login
             </Button>
           </div>
+          <p className="mt-4 text-gray-600">
+            You don't have an account?{" "}
+            <NavLink to="/register" className="text-green-700 hover:underline">
+              Register
+            </NavLink>
+          </p>
           <div className="flex items-center justify-center gap-x-5 mt-5">
             <div className="w-10 h-10 rounded-full bg-blue-800 text-white flex items-center justify-center cursor-pointer">
               <i className="fa-brands fa-facebook-f" />

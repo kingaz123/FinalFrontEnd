@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Input from "./Input";
-import IconEyeOpen from "../../components/icon/iconEyeOpen";
-import IconEyeClose from "../../components/icon/iconEyeClose";
+import IconEyeOpen from "../../components/icon/IconEyeOpen";
+import IconEyeClose from "../../components/icon/IconEyeClose";
 
 interface InputPasswordToggleProps {
   control: any;

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const DashboardMain: React.FC = () => {
   return (
-    <div className="w-[250px] bg-[#F4F5F7] h-full] backdrop-blur-lg h-screen flex flex-col items-center flex-shrink-0 shadow-xl">
+    <div className="w-[250px] bg-yellow-200 h-full] backdrop-blur-lg flex flex-col items-center flex-shrink-0">
       <div className="flex items-center justify-center gap-x-3 mt-5 mb-16 w-full">
         <NavLink
           to="/"
