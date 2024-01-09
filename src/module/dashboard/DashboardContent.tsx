@@ -22,7 +22,9 @@ const DashboardContent = (): JSX.Element => {
     if (!projectList) {
       return;
     }
-    setProjectArr(projectList);
+    // Sắp xếp projectList dựa trên giá trị ID từ cao xuống thấp (mới nhất đến cũ nhất)
+    const sortedProjects = [...projectList].sort((a, b) => b.id - a.id);
+    setProjectArr(sortedProjects);
   }, [projectList]);
 
   let currentPage = 1;
