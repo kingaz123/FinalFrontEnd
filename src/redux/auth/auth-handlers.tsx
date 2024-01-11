@@ -130,7 +130,7 @@ function* handleGetProjectCategory(): any {
 function* handleCreateProjectCategory({ payload }: any): any {
   const response = yield call(requestCreateProjectCategory, payload);
   if (response.status === 200) {
-    toast.success("Create ProjectCategory successfully!", {
+    toast.success("Create project successfully!", {
       pauseOnHover: false,
       delay: false,
     });
